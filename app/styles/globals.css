@@ -128,3 +128,10 @@ a {
   background-clip: text;
   text-fill-color: transparent;
 }
+
+body {
+  background-color: #F3F4F6 !important;
+}
+.prose {
+  color: #374151;
+}
