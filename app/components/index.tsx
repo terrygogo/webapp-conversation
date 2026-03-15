@@ -83,7 +83,8 @@ const Main: FC<IMainProps> = () => {
   } = useConversation()
 
   const [conversationIdChangeBecauseOfNew, setConversationIdChangeBecauseOfNew, getConversationIdChangeBecauseOfNew] = useGetState(false)
-  const [isChatStarted, { setTrue: setChatStarted, setFalse: setChatNotStarted }] = useBoolean(false)
+  const [isChatStarted, { setTrue: setChatStarted, setFalse: setChatNotStarted }] = useBoolean(ture)  
+  //const [isChatStarted, { setTrue: setChatStarted, setFalse: setChatNotStarted }] = useBoolean(false)
   const handleStartChat = (inputs: Record<string, any>) => {
     createNewChat()
     setConversationIdChangeBecauseOfNew(true)
